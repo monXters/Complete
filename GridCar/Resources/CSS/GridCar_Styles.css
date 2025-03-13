@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Ruleset for 320px - 480px. */
-}
-
 body {
   margin: auto;
   background-color: #3b6078;
@@ -27,8 +23,9 @@ body {
   grid-row: 1 / span 1;
   text-align: center;
   font-family: Orbitron;
-  font-size: 4.6875em;
+  font-size: 5em;
   font-weight: 700;
+  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -49,7 +46,7 @@ body {
   background-position: 0 -20px;
   background-repeat: no-repeat;
   z-index: -3;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .model-female {
@@ -110,20 +107,31 @@ button {
   all: unset;
 }
 
-.button-primary {
+.button-primary img{
+  margin-top: 4em;
   margin-bottom: 2rem;
+  width: 250px;
+  height: auto;
+}
+
+.button-secondary img {
+  width: 250px;
+  height: auto;
+  margin-left: 5em;
+  margin-top: -1.5em;
+  font-weight: 700;
 }
 
 .quote-mark {
-  color: #fff;
-  text-align: right;
+  color: #23dcef;
+  text-align: left;
   font-family: Rockwell;
   font-size: 8rem;
-  font-style: normal;
+  /* font-style: italic; */
   font-weight: 400;
   line-height: normal;
-  grid-column: 4 /* / span 1 */;
-  grid-row: 6 /* / span 1 */;
+  grid-column: 4 / span 1;
+  grid-row: 6 / span 1;
 }
 
 .quote {
@@ -136,7 +144,15 @@ button {
   line-height: 1.5em;
   grid-column: 4 / span 2;
   grid-row: 6 / span 3;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+}
+
+.gridCarName {
+  color: #23dcef;
+  font-family: Orbitron;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .signature {
@@ -167,6 +183,7 @@ h2 {
   grid-column: 2 / span 5;
   grid-row: 9;
   color: #fff;
+  padding-left: 4.5em;
 }
 
 .list-heading {
@@ -187,7 +204,7 @@ h2 {
   line-height: normal;
   letter-spacing: 0.0625rem;
   list-style-type: circle;
-  margin: .8em 1.8rem;
+  margin: 0.8em 1.8rem;
 }
 
 .road-stripe {
@@ -195,7 +212,6 @@ h2 {
   grid-row: 6 / span 2;
   margin-left: 2rem;
   z-index: -3;
-
 }
 
 .road-stripe2 {
@@ -204,13 +220,12 @@ h2 {
   margin-left: 2rem;
   z-index: -5;
   height: 20px;
-  
 }
 
 footer {
   color: #fff;
   font-family: Roboto;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
@@ -227,12 +242,138 @@ footer {
   line-height: 1.5rem;
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2em;
+}
+
 .ending-line {
   grid-row: 12;
   grid-column: 2 / span 6;
   margin-bottom: 70px;
   width: 100%;
   height: 2px;
-  background-color: #23DCEF;
+  background-color: #23dcef;
 }
 
+@media only screen and (max-width: 575px) {
+  /* Ruleset for mobile devices up to 575px wide */
+  .grid-container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(59, 96, 120, 1),
+        rgba(59, 96, 120, .9),
+        transparent 10%
+      ),
+      linear-gradient(to top, 
+      rgba(59, 96, 120, .9) 0%,
+      rgba(59, 96, 120, .8) 50%,
+      /* rgba(59, 96, 120, 1) 65%, */
+      /* rgba(59, 96, 120, .8) 70%, */
+      transparent 74%),
+      url(../Images/GC_Car_CoverShot.png),
+      url(../Images/GC_MainLogo_Cutout.png);
+    background-size: 150%;
+    background-position: top center, bottom 200px center;
+    background-repeat: no-repeat;
+  }
+
+  .road-stripe,
+  .road-stripe2 {
+    display: none;
+  }
+
+  .main-logo {
+    width: 350px;
+    height: 350px;
+  }
+
+  .main-title {
+    margin-top: 0.5em;
+    font-size: 7em;
+  }
+
+  .button-primary {
+    margin: 20em 30em 2em 0;
+  }
+
+  .button-primary img {
+    width: 400px;
+    height: auto;
+  }
+
+  .button-secondary img {
+    width: 400px;
+    height: auto;
+    margin-left: 8em;
+    margin-top: -1.5em;
+  }
+
+  .title-secondary {
+    font-size: 3.5rem;
+  }
+  .list-content {
+    font-size: 2rem;
+  }
+
+  .list-heading {
+    font-size: 2.5rem;
+  }
+
+  .how-it-works {
+    color: #fff;
+    padding-left: 0;
+    padding-right: 5em;
+  }
+
+  .model-female {
+    /* width: 90%;
+    height: auto; */
+    min-height: 600px;
+    min-width: 600px;
+    background-image: url(../Images/GC_Model_FemaleMain.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.8));
+    /* margin-top: 20px;
+    margin-right: 20px; */
+  }
+
+  .quote,
+  .signature {
+    text-align: left;
+    font-size: 3rem;
+    margin-right: 5em;
+  }
+
+  .gridCarName {
+    font-size: 4rem;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+  }
+
+  .footer-list {
+    font-size: 2em;
+    line-height: 2em;
+  }
+
+  footer {
+    
+  }
+
+  .last {
+    display: none;
+  }
+}
