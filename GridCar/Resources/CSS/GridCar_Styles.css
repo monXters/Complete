@@ -6,7 +6,8 @@
 body {
   margin: auto;
   background-color: #3b6078;
-  width: 1016px;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
 }
 
@@ -107,7 +108,7 @@ button {
   all: unset;
 }
 
-.button-primary img{
+.button-primary img {
   margin-top: 4em;
   margin-bottom: 2rem;
   width: 250px;
@@ -269,17 +270,17 @@ footer {
     background-image: linear-gradient(
         to bottom,
         rgba(59, 96, 120, 1),
-        rgba(59, 96, 120, .9),
+        rgba(59, 96, 120, 0.9),
         transparent 10%
       ),
-      linear-gradient(to top, 
-      rgba(59, 96, 120, .9) 0%,
-      rgba(59, 96, 120, .8) 50%,
-      /* rgba(59, 96, 120, 1) 65%, */
-      /* rgba(59, 96, 120, .8) 70%, */
-      transparent 74%),
-      url(../Images/GC_Car_CoverShot.png),
-      url(../Images/GC_MainLogo_Cutout.png);
+      linear-gradient(
+        to top,
+        rgba(59, 96, 120, 0.9) 0%,
+        rgba(59, 96, 120, 0.8) 50%,
+        /* rgba(59, 96, 120, 1) 65%, */ /* rgba(59, 96, 120, .8) 70%, */
+          transparent 74%
+      ),
+      url(../Images/GC_Car_CoverShot.png), url(../Images/GC_MainLogo_Cutout.png);
     background-size: 150%;
     background-position: top center, bottom 200px center;
     background-repeat: no-repeat;
@@ -297,7 +298,8 @@ footer {
 
   .main-title {
     margin-top: 0.5em;
-    font-size: 7em;
+    font-size: 4em;
+    text-align: center;
   }
 
   .button-primary {
@@ -305,12 +307,14 @@ footer {
   }
 
   .button-primary img {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     height: auto;
   }
 
   .button-secondary img {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     margin-left: 8em;
     margin-top: -1.5em;
@@ -367,10 +371,6 @@ footer {
   .footer-list {
     font-size: 2em;
     line-height: 2em;
-  }
-
-  footer {
-    
   }
 
   .last {
