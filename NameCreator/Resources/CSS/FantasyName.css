@@ -1,0 +1,190 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #424645;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f5755;
+  max-width: 28.125rem;
+  margin: 0.5em auto;
+  padding: 0.5em 1em;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  height: 1.2em;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 0.8em;
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: #57d49e;
+  color: #033c3d;
+}
+
+.homeButton:hover {
+  background-color: #033c3d;
+  color: white;
+}
+
+.mainLogo {
+  height: 4em;
+  width: auto;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 18rem;
+  /* background-color: #c8ef97; */
+}
+
+.logoBox p {
+  font-family: /* 'Sriracha',  */ serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 0.3em;
+  color: #57d49e;
+}
+
+#mainContent h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  padding-bottom: 0.5em;
+}
+
+#mainContent .checkboxes {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 1.875em;
+}
+
+input[type="radio"] {
+  accent-color: #57d49e;
+}
+
+#mainContent h1 {
+  color: white;
+  font-family: "Amarante", serif;
+  font-size: 2.8em;
+  padding-bottom: 2rem;
+}
+
+#mainContent {
+  background-color: #4f5755;
+  max-width: 28.125rem;
+  margin: auto;
+  padding: 1.5em;
+}
+
+#nameDisplay {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 2.2rem auto 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #57d49e;
+  height: 2em;
+  width: 10em;
+  background-color: black;
+}
+
+.donation {
+  background-color: #4f5755;
+  margin-top: 2em;
+  max-width: 28.125rem;
+  margin: 0.5em auto;
+  padding: 1.5em;
+  line-height: 1.4;
+}
+
+.thanks {
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  text-align: center;
+  color: rgb(224, 233, 240);
+  padding-bottom: 1em;
+  width: 13em;
+  margin: auto;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 28px;
+  border: none;
+  background-color: #57d49e;
+  color: #033c3d;
+}
+
+button:hover {
+  background-color: #033c3d;
+  color: white;
+}
+
+.footer footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 0.8em; */
+  line-height: 1.5;
+  background-color: #4f5755;
+  max-width: 28.125rem;
+  margin: 0.5em auto;
+  padding: 1.5em;
+}
+
+.footer footer .list-left {
+  width: 45%;
+  color: #909291;
+}
+
+.footer footer .list-right {
+  width: 45%;
+  color: #909291;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5;
+  background-color: #4f5755;
+  max-width: 28.125rem;
+  margin: 0.5em auto;
+  padding: 1.5em;
+}
+
+.nameGen {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: white;
+}
+
+@media only screen and (max-width: 450px) {
+  #mainContent,
+  .footer,
+  .header,
+  .donation {
+    width: 95%;
+    max-width: 95%;
+    margin: 0.5em auto;
+  }
+}

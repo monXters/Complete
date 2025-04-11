@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy Name Generator</title>
+    <link rel="stylesheet" href="./Resources/NameGen.css" />
+    <link rel="stylesheet" href="./Resources/reset.css" />
+
+    <!-- Preload google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ############# Google fonts for all pages ################################### -->
+
+    <!-- Main Title Text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pirata One - Pirate names-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One"
+      rel="stylesheet"
+    />
+    <!-- Puppies Play - Baby Name -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap"
+      rel="stylesheet"
+    />
+    <!-- New Rocker - Rock Band, Stage Name -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Rocker"
+      rel="stylesheet"
+    />
+
+    <!-- Russo One - Rapper name -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Montserrat - Business, Characters -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900"
+      rel="stylesheet"
+    />
+    <!-- Playfair - Maps, Locations -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900"
+      rel="stylesheet"
+    />
+    <!-- Amarante - Fantasy Names -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logoBox">
+        <img
+          class="mainLogo"
+          src="./Resources/Images/BrainBright2.png"
+          alt="Brain Power Playground Logo"
+        />
+        <p class="top-title">Name Creator</p>
+      </div>
+      <a class="homeButton" href="#">Home</a>
+    </div>
+    <div id="mainContent">
+      <h1>Fantasy Names</h1>
+      <h2>Choose Your Gender:</h2>
+      <div class="checkboxes">
+        <label><input type="radio" name="gender" id="male" /> Male</label>
+        <label><input type="radio" name="gender" id="female" /> Female</label>
+        <label
+          ><input type="radio" name="gender" id="neutral" checked />
+          Neutral</label
+        >
+      </div>
+      <button id="generateButton">Create Name</button>
+      <div id="nameDisplay"></div>
+      <script src="./Resources/FantasyName.js"></script>
+    </div>
+    <!-- PayPal donation button -->
+    <div class="donation">
+      <p class="thanks">We love having you here! We hope you love it too!</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="TZP4Y7GJ2JCSS" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+          border="0"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+        />
+        <img
+          alt=""
+          border="0"
+          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+          width="1"
+          height="1"
+        />
+      </form>
+    </div>
+    <div class="footer">
+      <p>Thanks for visiting us! We hope you enjoy the experience.</p>
+      <p>Please visit our fine family of brain games!</p>
+      <footer>
+        <section class="list-left">
+          <ul>
+            <li>Fortune Teller</li>
+            <li class="nameGen">Name Generator</li>
+            <li>Personality Quiz</li>
+            <li>Hidden Object Games</li>
+          
+          </ul>
+        </section>
+        <section class="list-right">
+          <ul>
+            <li>Choose Your Adventure</li>
+            <li class="nameGen">About Brainpower Playground</li>
+            
+          </ul>
+        </section>
+      </footer>
+      <p>© 2025 Brainpower Playground</p>
+      <p>Contact Us!</p>
+    </div>
+  </body>
+</html>

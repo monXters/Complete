@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rap Name Creator</title>
+    <link rel="stylesheet" href="./Resources/CSS/RapperName.css" />
+    <link rel="stylesheet" href="./Resources/CSS/reset.css" />
+
+    <!-- Preload google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ############# Google fonts for all pages ################################### -->
+    <!-- Russo One - Rapper name -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logoBox">
+        <img
+          class="mainLogo"
+          src="./Resources/Images/BrainBright2.png"
+          alt="Brain Power Playground Logo"
+        />
+        <p class="top-title">Name Creator</p>
+      </div>
+      <a class="homeButton" href="#">Home</a>
+    </div>
+    <div id="mainContent">
+      <h1>Rap Name</h1>
+      <h2>Your rap name is</h2>
+      <div class="checkboxes">
+        <label
+          ><input type="radio" name="bandName" id="single" checked /> Old School</label
+        >
+        <label
+          ><input type="radio" name="bandName" id="double" /> Nu Skool</label
+        >
+      </div>
+      <button id="generateButton">Create Name</button>
+      <div id="nameDisplay"></div>
+      <script src="./Resources/Scripts/RapperName.js"></script>
+    </div>
+    <!-- PayPal donation button -->
+    <div class="donation">
+      <p class="thanks">We love having you here! We hope you love it too!</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="TZP4Y7GJ2JCSS" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+          border="0"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+        />
+        <img
+          alt=""
+          border="0"
+          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+          width="1"
+          height="1"
+        />
+      </form>
+    </div>
+    <div class="footer">
+      <p>Thanks for visiting us! We hope you enjoy the experience.</p>
+      <p>Please visit our fine family of brain games!</p>
+      <footer>
+        <section class="list-left">
+          <ul>
+            <li>Fortune Teller</li>
+            <li class="nameGen">Name Generator</li>
+            <li>Personality Quiz</li>
+            <li>Hidden Object Games</li>
+          </ul>
+        </section>
+        <section class="list-right">
+          <ul>
+            <li>Choose Your Adventure</li>
+            <li class="nameGen">About Brainpower Playground</li>
+          </ul>
+        </section>
+      </footer>
+      <p>© 2025 Brainpower Playground</p>
+      <p>Contact Us!</p>
+    </div>
+  </body>
+</html>
